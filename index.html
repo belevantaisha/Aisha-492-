@@ -1,13 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<title>Document</title>
+	<meta charset="utf-8">
+	<title>Кофейня "Barista"</title>
 </head>
-<body font-size: 20px;
-	 color: #042753>
-<header>
-	<h1>Hello world!</h1>
-	<p>London is the capital of Great Britain!</p>
+<style type="text/css">
+body{background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614646667_38-p-fon-kafe-dlya-fotoshopa-46.jpg); width:100%;
+	} 
+	h1{font-size: 50px;
+		color: #a3623a;
+		text-align: center;
+		text-shadow: 15px 25px 10px black, 0 0 5em white;
+	}
+	h2{color: white;
+		font-size: 20px;
+		text-align: center;
+	}
+	p{color: white;
+		float: left;
+		font-size: 15px;
+	}
+	.c{left: 10px; 
+		width: 300px;
+		margin: 10px 10px;
+		margin-bottom: 40px;
+		padding: 10px;
+	}
+	.table {
+	color: #a3623a;
+	font-size: 100%; 
+	text-align: center; 
+	width: 100%;}
+	.spisok{color: black;
+	font-size: 20px;
+	}
+	.form{height: 500px;
+		right: 300px; 
+		width: 400px;
+		background-color: #5c0001;
+		margin: 20px auto;
+		padding: 20px;
 
+	}
+</style>
+<body><h1><span style="border: 1px solid #a3623a; padding:10px;">Добро пожаловать в кофейню "Barista"</span></h1>
+<div class="c">
+	<p><strong>Настоящая любовь — это кофе, который варишь дома с утра. <i> © Макс Фрай</i></strong></p>
+</div>
+<h2>М Е Н Ю</h2>
+<table class="table">
+	<thead style="color: white; background-color:#5c0001">
+		<tr>
+			<th>Напитки</th>
+			<th>Размер (мл)</th>
+			<th>Цена (руб)</th>
+		</tr>
+	</thead>
+	<tbody style="color: white">
+		<tr>
+			<td><i>Эспрессо</i></td>
+			<td>100/150/200</td>
+			<td>100/170/250</td>
+		</tr>
+		<tr>
+			<td><i>Латте</i></td>
+			<td>150/200</td>
+			<td>180/260</td>
+		</tr>
+		<tr>
+			<td><i>Рафф</i></td>
+			<td>150мл/200мл</td>
+			<td>200/270</td>
+		</tr>
+		<tr>
+			<td><i>Капучино</i></td>
+			<td>150/200</td>
+			<td>150/210</td>
+		</tr>
+		<tr>
+			<td><i>Капучино со сливками</i></td>
+			<td>150/200</td>
+			<td>170/220</td>
+		</tr>
+		<tr>
+			<td><i>Фраппе</i></td>
+			<td>100/150/200</td>
+			<td>120/190/260</td>
+		</tr>
+		<tr>
+			<td><i>Двойной эспрессо</i></td>
+			<td>100/150/200</td>
+			<td>140/210/290</td>
+		</tr>
+		<tr>
+			<td><i>Флэйт Уайт</i></td>
+			<td>150/200</td>
+			<td>170/220</td>
+		</tr>
+		<tr>
+			<td><i>Американо</i></td>
+			<td>100/150/200</td>
+			<td>110/180/220</td>
+		</tr>
+	</tbody>
+</table>
+		<h2>С О Т Р У Д Н И К И</h2>
+		<div class="spisok">
+			<li><b><span style="background: #5c0001;">Директор - Орлов Константин Юрьевич</span></b></li>
+			<li><b><span style="background: #5c0001;">Арт-директор - Янковский Михаил Иванович</span></b></li>
+			<li><b><span style="background: #5c0001;">Рекламный агент - Новикова Мария Сергеевна</span></b></li>
+			<li><b><span style="background: #5c0001;">Бариста - Орлов Юрий Константинович</span></b></li>
+			<li><b><span style="background: #5c0001;">Бариста - Лапин Игорь Иванович</span></b></li>
+			<li><b><span style="background: #5c0001;">Бариста - Гоголь Марина Родионовна</span></b></li>
+			<li><b><span style="background: #5c0001;">Официант - Лапин Игорь Иванович</span></b></li>
+			<li><b><span style="background: #5c0001;">Официант - Боброва Валентина Игоревна</span></b></li>
+  		</div>
+  		<h2>В А Ш И     П О Ж Е Л А Н И Я</h2>
+  		<div class="form">
+  		   <form method="GET" id="search">
+    <p>
+      <label for="name">ФИО</label>
+      <input id="name" type="text" name="ФИО" placeholder="ФИО">    
+    </p>
+    <p>
+      <label for="email">Электронная почта</label>
+      <input id="email" type="email" name="почта" placeholder="Электронная почта"> 
+    </p>
+    <p> 
+      <label for="radio">Часто ли Вы посещаете наше заведение?</label>
+    <label for="radio1"><input id="radio1" type="radio" name="" placeholder="Выбор">Да</label> 
+    <label for="radio2"><input id="radio2" type="radio" name="" placeholder="Выбор">Нет</label> 
+    </p>
+    <p> 
+      <label for="checkbox">Какой Ваш любимый кофе?</label>
+    <p><label for="checkbox1"><input id="checkbox1" type="checkbox" name="герой" placeholder="герой">Эспрессо</label></p>
+    <p><label for="checkbox2"><input id="checkbox2" type="checkbox" name="герой" placeholder="герой">Американо</label></p>
+    <p><label for="checkbox3"><input id="checkbox3" type="checkbox" name="герой" placeholder="герой">Рафф</label></p>
+    <p><label for="checkbox4"><input id="checkbox4" type="checkbox" name="герой" placeholder="герой">Капучино</label></p>
+    <p><label for="checkbox5"><input id="checkbox5" type="checkbox" name="герой" placeholder="герой">Фраппе</label></p>
+    <p><label for="checkbox6"><input id="checkbox6" type="checkbox" name="герой" placeholder="герой">Флэйт Уайт</label></p>
+    </p>
+    <p>
+     <label for="About">Напишите Ваши пожелания</label> <textarea id="About" rows="10" cols="50"></textarea>    
+    </p>
+     <p> <button type="Submit">Отправить</button></p>
+  </form> 
+  		</div>
 </body>
 </html>
