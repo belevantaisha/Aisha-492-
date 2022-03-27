@@ -1,131 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>block</title>
+	<title>ART&SHOW - Интернет-выставка</title>
 	<meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- адаптивность под разные устройства -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
 </head>
-<body>
+<body style="background: white;background-size: cover;">
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<div class="container">
-		<a href="a" class="navbar-brand"> WEB Blog TSPU</a>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="headerMenu" aria-expanded="false" aria-label="Toggle navigation">
+	<div class="container-fluid">
+		<a href="index.html" class="navbar-brand"> ART&SHOW</a>
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 
 		<div class="collapse navbar-collapse" id="headerMenu">
-			<ul class="navbar-nav">
+			<ul class="navbar-nav me-auto">
 				<li class="nav-item">
-					<a href="#" class="nav-link">
-					Home</a>
+					<a href="index.html" class="nav-link active">Главная</a>
 				</li>
 				<li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="pages/pg3.html">Добавить фотопроект</a>
        			</li>
 				<li class="nav-item dropdown">
-          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            		Product catalog</a>
+          			<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Подборки</a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Women</a></li>
-            <li><a class="dropdown-item" href="#">Man</a></li>
+            <li><a class="dropdown-item" href="pages/pg4.html">Фотоконкурсы</a></li>
+            <li><a class="dropdown-item" href="pages/pg5.html">Фотопроекты</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Children</a></li>
+            <li><a class="dropdown-item" href="pages/pg6.html">Интересные фото</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
+        		</li>
+<!--         <li class="nav-item">
           <a class="nav-link disabled">Disabled</a>
-        </li>
+        </li> -->
 		</ul>
 		
-			<form class="d-flex">
+			<form class="d-flex" >
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-warning" type="submit">Поиск</button>
       </form>
     </div>
   </div>
 </nav>
-		</div>
-	</div>
-
-</nav>
-<div class="container"> 
-	<div class="row">
-	<b>	Блок с чем-то о сайте. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b>
-	</div>
-</div>
 
 <div class="container"> 
 	<div class="row">
-		<div class="col-8">
-	<div class="card mb-3" style="max-width: 540px;">
-  	<div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="Здесь картинка">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div>
+		<div class="col-12"> 
+<img src="img/2.png" style=" width: 100% ;border: solid 1px; box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.2); border-radius: 1000px 500px;">
+	</div>
 		</div>
-		<div class="col-4">
-<div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
+
+			<div class="row mt-3">
+				<div class="col-9" style="color: white;">
+						<div class="post p-4" style="background:orange; border: solid 2px; border-radius:15px;  box-shadow: 7px 7px 5px rgba(0,0,0,0.3); ">
+					<div class="post-header">
+						<h3>Джек Дэвисон: игра с реальностью и цветом</h3>
+					</div>
+					<div class="post-body text-end">
+						<a href="https://cameralabs.org/aeon/dzhek-devison/albom" class="link-light"><i>Cameralabs</i></a>
+						<i>22 февраля 2022</i>
+					</div>
+							<div class="row mb-2 " >
+		<div class="col-3" ><img src="img/2.jpg" style="width: 100%;display:block;margin-top: 10%;border: solid 2px white; border-radius:15px;" > </div>
+		<div class="col-9"> Английский фотограф-самоучка Джек Дэвисон родился и вырос в сельской глубинке. Его исключительное внимание к деталям окружающего мира, талант улавливать живую индивидуальность объекта сделали Дэвисона одним из самых востребованных фотографов и портретистов. Он неустанно экспериментирует с цветом, светом, ракурсом, ему нравится сбивать с толку, заставлять фотографию «звучать» вне контекста. Нестандартный взгляд на обыденность дарит его работам...</div>
+	</div>
+					<div class="post-footer">
+						<a href="https://cameralabs.org/aeon/dzhek-devison/albom" class="btn btn-light" style="background: orange; color: white;">Подробнее...</a>
+						<a href="pages/comm.html" class="btn btn-light" style="background: orange; color: white;" >Оставить комментарий</a>
+					</div>
+						</div>
+
+					<div class="post mt-3 p-3 bg-dark " style="border: solid 2px; border-radius:15px; box-shadow: 7px 7px 5px rgba(0,0,0,0.3);">
+	<div class="post-header  ">
+	<h3>Патрик Личфилд: мир женской красоты и стиля в объективе королевского фотографа</h3>
+	<div class="post-body text-end" ><a href="https://cameralabs.org/aeon/patrik-lichfild/albom" class="link-light"><i>Cameralabs</i></a>
+<i>19 февраля 2022</i></div>
+	<div class="row mb-2" >
+		<div class="col-3 " ><img src="img/4.jpg" style="width: 100%; display:block;margin-top: 10%;border: solid 2px white;border-radius:15px; "> </div>
+		<div class="col-9"> Имя Патрика Личфилда неизменно ассоциируется с миром красоты и стиля. В модной и портретной фотографии он заметно преуспевал более 40 лет. Родственные связи с британской королевой открыли Личфилду двери Букингемского дворца, его приглашали снимать официальные портреты монархов, он был главным фотографом на свадьбе принца Чарльза и леди Дианы Спенсер, перед его объективом блистали аристократы, кинозвёзды и фотомодели. Женская красота – тема, в которой наилучшим образом раскрылся фотографический талант лорда Личфилда.</div>
+	</div><div class="post-footer">
+						<a href="https://cameralabs.org/aeon/davide-sorrenti/albom" class="btn btn-light bg-dark" style="color:white" >Подробнее...</a>
+						<a href="pages/comm.html" class="btn btn-light bg-dark" style="color:white">Оставить комментарий</a>
+					</div>		
+</div></div>
+
+						<div class="post mt-3 p-4" style="background:orange; border: solid 2px; border-radius:15px;  box-shadow: 7px 7px 5px rgba(0,0,0,0.3); ">
+					<div class="post-header">
+						<h3>Давиде Сорренти: моментальная жизнь</h3>
+					</div>
+					<div class="post-body text-end">
+						<a href="https://cameralabs.org/aeon/davide-sorrenti/albom" class="link-light"><i>Cameralabs</i></a>
+						<i>16 февраля 2022</i>
+					</div>
+							<div class="row mb-2 " >
+		<div class="col-3" ><img src="img/5.jpg" style="width: 100%;display:block;margin-top: 10%;border: solid 2px white; border-radius:15px;" > </div>
+		<div class="col-9"> Давиде Сорренти мог стать вундеркиндом модной фотографии, если бы не ушёл из жизни в двадцатилетнем возрасте. Он был в числе первых, кто отважился снимать моду без гламура, его документальный подход к коммерческой съёмке стал настоящим прорывом в 90-е и как нельзя актуален в наши дни. После его скандальной смерти, причиной которой ошибочно посчитали передозировку героином, работы Давиде стали определять как «героиновый шик». Лишь спустя...</div>
+	</div>
+
+					<div class="post-footer">
+						<a href="https://cameralabs.org/aeon/davide-sorrenti/albom" class="btn btn-light" style="background: orange; color: white;">Подробнее...</a>
+						<a href="pages/comm.html" class="btn btn-light" style="background: orange; color: white;" >Оставить комментарий</a>
+					</div>
+						</div><div class="mt-3">
+<nav aria-label="Page navigation example " >
+  <ul class="pagination justify-content-center">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="pages/pg2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="pages/pg2.html">Next</a></li>
   </ul>
-</div>
-<p></p>
-<div class="card">
-  <div class="card-header">
-    Quote
-  </div>
+</nav>  </div>
+					</div>
+
+		
+		<div class="col-3">
+			<div class="card bg-success" style="width: 100%; font-size: 110%;">
+  <img src="img/6.jpg" class="card-img-top" alt="...">
   <div class="card-body">
-    <blockquote class="blockquote mb-0">
-      <p>A well-known quote, contained in a blockquote element.</p>
-      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
+    <p class="card-text"><a href="https://cameralabs.org/aeon/mezhdunarodnaya-fotopremiya-35awards/albom" style="color:white; text-decoration: none;">Международная фотопремия 35AWARDS – «100 лучших фотографий и фотографов года»</a></p>
   </div>
 </div>
-<p></p>
-<div class="card border-dark mb-3">
-  <div class="card-header">Header</div>
-  <div class="card-body text-dark">
-    <h5 class="card-title">Dark card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-</div>
-<p></p>
-<div class="card text">
-  <div class="card-header">
-    Featured
-  </div>
- <p></p>
+
+<div class="card bg-dark mt-3" style="color:white;font-size: 110%">
   <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="card-footer text-muted">
-    2 days ago
+    <h5 class="card-title">Напоминание!</h5>
+    <p class="card-text">Ты всегда можешь добавить свой фотопроект и показать свои таланты!</p>
+    <a href="pages/pg4.html" class="btn btn-light">Перейти</a>
   </div>
 </div>
-		</div>
+
+			<div class="card bg-dark text-white mt-3">
+  <img src="img/7.jpg" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Кинематографические фотографии:</h5>
+    <p class="card-text">снимки, похожие на мгновения из кино.</p>
+<!--     <p class="card-text  text-end" style="font-size: 70%">Фотограф @jintoniic</p> -->
+  </div>
+</div>
+  
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer><nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-3">
+  <div class="container-fluid color">
+    <a class="navbar-brand" href="index.html">ART&SHOW</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="https://vk.com/cameralab">Вконтакте</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.instagram.com/cameralabsmag/">Инстаграм</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://t.me/cameralab">Телеграм</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav></footer>
+	
+</div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
