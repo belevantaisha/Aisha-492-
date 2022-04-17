@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>card1</title>
+  <link rel="stylesheet"  href="../../css/bootstrap.min.css">
+  <link rel="stylesheet"  href="../../css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <style type="text/css">
+    .rating-mini {
+  display: inline-block;
+  font-size: 0;
+}
+a p {
+  color: black; 
+
+}
+#dob {
+   font-size: 150%;
+}
+#dob:hover {
+  font-size: 170%;
+}
+
+a{
+  text-decoration: none;
+  color:orange;
+}
+.raz{
+border : 2px solid lightgrey;
+}
+.phot:hover{
+  padding: 0;
+    border:3px solid #2F496E;
+}
+.raz:hover {
+  border:3px solid #2F496E;
+  background-color: #2988BC
+}
+.raz:focus {
+  border:3px solid #ED8C72;
+}
+.rating-mini span {
+  padding: 0;
+  font-size: 20px;
+  line-height: 1;
+  color: lightgrey;
+}
+.rating-mini > span:before {
+  content: '★';
+}
+.rating-mini > span.active {
+  color: gold;
+}
+  </style>
+  <script type="text/javascript">
+    var imgs=new Array('../img/c2.jpg','../img/c3.jpg','../img/c4.jpg','../img/c4.jpg','../img/c5.jpg')
+    function chang (p){
+    document.getElementById('mainimg').src = imgs[p]}
+     function liked () {
+  document.getElementById('fi').style.color="orange"
+    document.getElementById('lh').classList.toggle('visually-hidden')
+ }
+ function toast() {
+  document.getElementById('liveToast').classList.toggle('show');
+  setTimeout("document.getElementById('liveToast').classList.toggle('show')",3000)
+   document.getElementById('hl').classList.toggle('visually-hidden')
+}
+// elems = ['белый', 'черный','красный','синий','серый']
+// function smena(t){
+//   document.getElementById('text').textContent = 'Цвет - ' + elems[t]
+// }
+  </script>
+
+</head>
+<body style="background: white;background-size: cover;">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a href="../index.html" class="navbar-brand"> ART&SHOW</a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerMenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="headerMenu">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pg3.html">Добавить фотопроект</a>
+            </li>
+        <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Подборки</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="pg4.html">Фотоконкурсы</a></li>
+            <li><a class="dropdown-item" href="pg5.html">Фотопроекты</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="pg6.html">Интересные фото</a></li>
+          </ul>
+            </li>
+            <li class="nav-item">
+          <a class="nav-link" href="#">Магазин</a>
+            </li>
+<!--         <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li> -->
+    </ul>
+    
+      <form class="d-flex" >
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+        <button class="btn btn-outline-warning" type="submit">Поиск</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container mt-3 rounded-pill" >
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="shop.html" style="color:#ffcc00; text-decoration: none;">Каталог</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Смартфоны, планшеты и фототехника</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Фототехника</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Фотоаппараты</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Беззеркальная камера Panasonic Lumix DMC-GX80 черная</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Характеристики</li>
+  </ol>
+</nav>
+<div class="row" style="border-bottom: solid lightgrey "> <div class="col-9"></div> <div class="col-3"><div class="row"><div class="col-6"></div><div class="col-2"><i class="fa fa-user" style="font-size:180%;"aria-hidden="true" ></i></div><div class="col-2"><i id="gl" class="fa fa-heart" aria-hidden="true" style="font-size:180%" ><span id="lh" class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle visually-hidden">
+  </span></i></div><div class="col-2"><i class="fa fa-shopping-cart"style="font-size:180%" aria-hidden="true"><span id="hl" class="position-absolute translate-middle p-2 bg-danger border border-light rounded-circle visually-hidden"></i></div></div></div></div>
+<h2>Характеристики Беззеркальная камера Panasonic Lumix DMC-GX80 черная</h2>
+</div>
+<div class="container">
+
+  <div class="row">
+    <div class="col-1">
+      <div class="row mt-3">
+        <img src="../img/c2.jpg"onclick="chang(0)" class="phot">
+    </div>
+    <div class="row mt-3 "><img src="../img/c5.jpg" onclick="chang(4)" class="phot">
+    </div>
+    <div class="row mt-3"><img src="../img/c3.jpg" onclick="chang(1)" class="phot">
+    </div>
+    <div class="row mt-3 "><img src="../img/c4.jpg" onclick="chang(3)" class="phot">
+    </div>
+    </div>
+    <div class="col-5"> <div class="row"><img src="../img/c4.jpg" id="mainimg"> </div>
+    </div>
+
+    <div class="col-6">
+      <div class="row">
+        <p style="color:grey">16.84 Мп, 17.3 x 13.0 мм, Live MOS, 200-25600 ISO, 40 кадр./сек, Wi-Fi, экран - сенсорный, наклонный<a href="#har" style="color:orange;"> подробнее</a></p>
+        <h3>Panasonic Lumix DMC-GX80</h3>
+        <div class="col-6">
+        
+              <div class="rating-mini ">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span></span>
+      </div> 
+    </div><div class="col-3">
+        <p style="color:grey">Отзывы 102</p></div>
+  </div>
+  <div class="row">
+      <div style="display:inline-block; width: 40%; font-size: 200% ">76 499 ₽</div>
+    <p><div class="mt-0" style="color:grey;width: 100%">от 5 060 ₽/мес.</div></p><!-- <div class="mt-3" style="display:inline-block; width: 8%;background-color: red; height: 20%;color: white; font-weight: 700; border-radius: 300px 50px 50px 350px ">-36%</div> -->
+  </div>
+  <div class="row"> 
+
+<div class="row"><div class="col-10  rounded-pill p-2" id="dob" style="color: white; background-color: orange; font-weight: 700; text-align: center" onclick="toast()">Добавить в корзину</div><div class="col-2" ><i class="fa fa-heart mt-2"onclick="liked()" aria-hidden="true" id="fi" style="font-size: 200%; color: red"></i></div></div>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
+    <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true" style="color:black">
+      <div class="toast-header">
+        <strong class="me-auto">Оповещение</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+      <div class="toast-body">
+        Этот товар был добавлен в Вашу корзину!
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+	<div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 25%; height: 70%;text-align:center; margin-right: 10px">
+  <p>В магазинах: <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:none">
+  <a href="#" style="color: orange">завтра</a>
+</button></p></div>
+<div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 30%; height: 70%;text-align:center;margin-right: 10px ">
+  <p>Пункты выдачи:<button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="border:none">
+  <a href="#" style="color: orange">доступны</a>
+</button></p></div>
+<div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 30%; height: 70%;text-align:center; ">
+  <p>Доставим на дом: <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:none">
+  <a href="#" style="color: orange">послезавтра</a>
+</button></p></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Выберите регион доставки</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><div class="col-12">
+<div class="row"><div class="col-5"><form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Выбор страны" aria-label="Поиск"><button style="border: none; background-color: white; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form></div> <div class="col-7"><form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Выбор города" aria-label="Поиск"><button style="border: none; background-color: white; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form></div></div>
+      </div></div>
+<div class="row">
+    <div class="col-4 ms-2" style="overflow-y: scroll;height:400px; ">
+    <a href="#">  <p>Россия</p></a>
+    <a href="#">  <p>Казахстан</p></a>
+    <a href="#">  <p>Беларусь</p></a>
+    <a href="#">  <p>Кыргызстан</p></a>
+    <a href="#">  <p>Абхазия</p></a>
+    <a href="#">  <p>Австралия</p></a>
+    <a href="#">  <p>Австрия</p></a>
+    <a href="#">  <p>Азербайджан</p></a>
+    <a href="#">  <p>Албания</p></a>
+    <a href="#">  <p>Алжир</p></a>
+    <a href="#">  <p>Ангилья</p></a>
+    <a href="#">  <p>Ангола</p></a>
+  </div>
+    <div class="col-7"> <p style="color:grey">Популярные города</p>
+      <div class="row">
+        <div class="col-6"><p >Москва</p>
+          <p >Санкт-Петербург</p><p >Новосибирск</p><p >Екатеринбург</p><p >Омск</p></div>
+        <div class="col-6"><p >Волгоград</p>
+          <p >Уфа</p><p >Красноярск</p><p >Казань</p><p >Самара</p></div>
+      </div></div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Наличие товара:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"><div class="col-12">
+<div class="row"><div class="col-12"><form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Поиск магазина" aria-label="Поиск"><button style="border: none; background-color: white; color:lightgrey" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form></div></div>
+      </div></div>
+<div class="row">
+    <div class="col-11 ms-2" style="overflow-y: scroll;height:400px;">
+    <a href="#">  <p>Ул. Ивана Черных, д 19А</p></a>
+    <a href="#">  <p>Ул. Кирова, д 36</p></a>
+    <a href="#">  <p>Ул. Кирова, д 149А</p></a>
+    <a href="#">  <p>Ул. Фрунзе, д 99</p></a>
+    <a href="#">  <p>Ул. Герцена, д 59Б</p></a>
+    <a href="#">  <p>Пр-т Комсомольский, д 13</p></a>
+    <a href="#">  <p>Ул. Ленина, д 88</p></a>
+    <a href="#">  <p>Пр-т Ленина, д 18</p></a>
+    <a href="#">  <p>Ул. Вершинина, д 12</p></a>
+    <a href="#">  <p>Ул. Фрунзе, д 60</p></a>
+    <a href="#">  <p>Ул. Советская, д 34</p></a>
+    <a href="#">  <p>Ул. Яковлева, д 50</p></a>
+    <a href="#">  <p>Ул. Карла Маркса, д 55</p></a>
+    <a href="#">  <p>Ул. Советская, д 75</p></a>
+    <a href="#">  <p>Иркутский тракт, д 57</p></a>
+    <a href="#">  <p>Площадь Ленина, д 34А</p></a>
+</div>
+      </div>
+    </div>
+  </div>
+
+<!-- </div></p> ДОДЕЛАТЬ КРАСИВО
+  <div class="row">
+  	<div class="col-6 mt-2">Аксессуары</div>
+  </div> -->
+</div>
+</div></div>
+<div class="row" style="background-color: #f6f6f6">
+  <h3 id="har">Характеристики</h3>
+  <div class="col-6">
+  	<h5 mt-4>Заводские данные</h5>
+  	<p>Гарантия АСЦ</p>
+  	<p>Страна-производитель</p>
+  	<h5 mt-4>Общие параметры</h5>
+  	<p>Тип</p>
+  	<p>Модель</p>
+  	<p>Цвет камеры</p>
+  	<p>Материал корпуса</p>
+  	<h5 mt-4>Матрица</h5>
+  	<p>Общее число мегапикселей матрицы</p>
+  	<p>Число эффективных мегапикселей</p>
+  	<p>Тип матрицы</p>
+  	<p>Кроп-фактор</p>
+  	<p>Полнокадровый</p>
+  	<p>Максимальное разрешение</p>
+  	<p>Auto ISO</p>
+  	<h5 mt-4>Функциональные возможности</h5>
+  	<p>Стабилизатор изображения (фотосъемка)</p>
+  	<p>Баланс белого</p>
+  </div>
+  <div class="col-6">
+  	<h5 mt-6 style="color: #f6f6f6;">h</h5><p>36 мес.</p>
+  	<p>Китай</p>
+  	<h5 mt-4 style="color: #f6f6f6;">f</h5><p>беззеркальная камера</p>
+  	<p>Panasonic Lumix DMC-GX80</p>
+  	<p>черная</p>
+  	<p>пластик, металл, синтетическая кожа</p>
+  	<h5 mt-4 style="color: #f6f6f6;">v</h5><p>16.84 Мп</p>
+  	<p>16 Мп</p>
+  	<p>Live MOS</p>
+  	<p>17.3 x 13.0 мм</p>
+  	<p>2</p>
+  	<p>нет</p>
+  	<p>есть</p>
+  	<h5 mt-4 style="color: #f6f6f6;">v</h5><p>сдвиг матрицы</p>
+  	<p>брекетинг, автоматический, ручная установка, из списка</p>
+  </div>
+</div>
+
+<div class="row mt-3">
+<h3>Описание</h3>
+<p style="text-align:justify; ">Камера со сменной оптикой Panasonic Lumix DMC-GX80 обладает всеми достоинствами зеркальной и компактным корпусом. Отличительными особенностями этой модели стали съемка видео в 4K-формате и скоростная серийная (40 кадров в секунду с помощью электронного затвора). Стоит отметить и премиальный внешний вид камеры: металлический корпус покрыт искусственной кожей, как у первых компактных моделей.
+Panasonic Lumix DMC-GX80 оборудован матрицей на 16.84 Мпикс с функцией самоочистки и блоком Wi-Fi для передачи данных в сеть непосредственно с места съемки. Поворотный ЖК-дисплей облегчает работу с необычными ракурсами, в толпе и в ограниченном пространстве. Камера поставляется без объектива, его выбор оставлен на усмотрение пользователя и зависит только от стоящих перед ним задач.</p>	
+</div>
+
+<div class="row mt-3" style="background-color: #ffffee">
+	<div class="col-10">
+		<h3>Самый популярный отзыв</h3>
+		<h6>Will S.</h6>
+		<div class="rating-mini">
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span class="active"></span>  
+  <span class="active"></span>    
+  <span></span>
+      </div> 
+      <p><b>Товар:</b>Беззеркальная камера Panasonic Lumix DMC-GX80 черная</p>
+      <p><b>Срок использования:</b> Менее месяца</p>
+      <p mt-3><b>Достоинства</b></p>
+      <p>Цена;</p><p>Снимает видео в 4к;</p><p>Встроенный стабилизатор, который работает в том числе и в 4к;</p><p>Зарядка через USB;</p><p>Старый формат батарейки, не нужно менять.</p>
+      <p mt-3><b>Недостатки</b></p>
+      <p>Большой кроп (порядка 2,5) в режиме 4к;</p><p>Очень медленная фокусировка в режиме 4к.</p>
+      <p mt-3><b>Комментарий</b></p>
+      <p>Купил около месяца назад на замену GX-7. За такую цену просто подарок, даже с учетом курса доллара. К сожалению, при съемке в 4к кроп получается уже совсем неприличный, поэтому имеет смысл сразу задуматься о приобретении широкоугольных объективов. Объектив 12-35 2.8 становится вообще крайне необходимым.</p>
+	</div>
+	<div class="col-2">
+		<p><a href="#">Все отзывы</a></p>
+		<p style="color: lightgrey">20.03.2020 Яндекс.Маркет</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<i class="fa fa-thumbs-up" aria-hidden="true" style="font-size: 150%"></i>
+		<a href="#"><b>+28</b></a>
+		<i class="fa fa-thumbs-down" aria-hidden="true" style="font-size: 150%"></i>
+	</div>
+</div>
+<div class="row" >
+<div class="col-4 mt-3"><p style="font-weight: 600">Компания</p> <a href="#" style="color:black;text-decoration: none"><p>О компании</p></a><a href="#" style="color:black;text-decoration: none"><p>Новости</p></a><a href="#" style="color:black;text-decoration: none"><p>Партнерам</p></a><a href="#" style="color:black;text-decoration: none"><p>Вакансии</p></a><a href="#" style="color:black;text-decoration: none"><p>Политика конфиденциальности</p></a><a href="#" style="color:black;text-decoration: none"><p>Персональные данные</p></a><a href="#" style="color:black;text-decoration: none"><p>Правила продаж</p></a><a href="#" style="color:black;text-decoration: none"><p>Сервисные центры</p></a></div>
+<div class="col-2 mt-3"><p style="font-weight: 600">Покупателям</p> <a href="#" style="color:black;text-decoration: none"><p>Как оформить заказ</p></a><a href="#" style="color:black;text-decoration: none"><p>Способы оплаты</p></a><a href="#" style="color:black;text-decoration: none"><p>Кредиты</p></a><a href="#" style="color:black;text-decoration: none"><p>Доставка</p></a><a href="#" style="color:black;text-decoration: none"><p>Статус заказа</p></a><a href="#" style="color:black;text-decoration: none"><p>Обмен, возврат, гарантия</p></a><a href="#" style="color:black;text-decoration: none"><p>Проверка статуса ремонта</p></a></div>
+<div class="col-2 mt-3"><p style="font-weight: 600">Юридическим лицам</p> <a href="#" style="color:black;text-decoration: none"><p>Проверка счета</p></a><a href="#" style="color:black;text-decoration: none"><p>Корпоративные отделы</p></a><a href="#" style="color:black;text-decoration: none"><p>Подарочные карты</p></a><a href="#" style="color:black;text-decoration: none"><p>Помощь</p></a></div>
+<div class="col-3 mt-3"><p style="font-weight: 500">Оставайтесь на связи</p>
+<p>8-800-77-07-999 (c 07:00 до 02:00)</p>
+<p><a href="#">Адреса магазинов в г. Томск</a></p>
+<div class="row"><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-vk" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-youtube-play" aria-hidden="true"></i></div><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-instagram" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:black; text-align: center" ><i class="fa fa-telegram" aria-hidden="true"></i></div></div></div></div>
+</div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../jquery.min.js"></script>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</body>
+</html>
