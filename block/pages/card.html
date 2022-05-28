@@ -4,9 +4,9 @@
   <title>card1</title>
   <link rel="stylesheet"  href="../../css/bootstrap.min.css">
   <link rel="stylesheet"  href="../../css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"> -->
   <style type="text/css">
-    .rating-mini {
+.rating-mini {
   display: inline-block;
   font-size: 0;
 }
@@ -57,7 +57,8 @@ border : 2px solid lightgrey;
     function chang (p){
     document.getElementById('mainimg').src = imgs[p]}
      function liked () {
-  document.getElementById('fi').style.color="orange"
+   document.getElementById('fi').classList.toggle('fa-heart-o')   	
+  document.getElementById('fi').classList.toggle('fa-heart')
     document.getElementById('lh').classList.toggle('visually-hidden')
  }
  function toast() {
@@ -84,7 +85,7 @@ border : 2px solid lightgrey;
     <div class="collapse navbar-collapse" id="headerMenu">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a href="index.html" class="nav-link active">Главная</a>
+          <a href="../index.html" class="nav-link active">Главная</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="pg3.html">Добавить фотопроект</a>
@@ -116,11 +117,11 @@ border : 2px solid lightgrey;
 <div class="container mt-3 rounded-pill" >
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="shop.html" style="color:#ffcc00; text-decoration: none;">Каталог</a></li>
-    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Смартфоны, планшеты и фототехника</a></li>
-    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Фототехника</a></li>
-    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Фотоаппараты</a></li>
-    <li class="breadcrumb-item"><a href="#" style="color:#ffcc00; text-decoration: none;">Беззеркальная камера Panasonic Lumix DMC-GX80 черная</a></li>
+    <li class="breadcrumb-item"><a href="shop.html" style="color:#006400; text-decoration: none;">Каталог</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#006400; text-decoration: none;">Смартфоны, планшеты и фототехника</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#006400; text-decoration: none;">Фототехника</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#006400; text-decoration: none;">Фотоаппараты</a></li>
+    <li class="breadcrumb-item"><a href="#" style="color:#006400; text-decoration: none;">Беззеркальная камера Panasonic Lumix DMC-GX80 черная</a></li>
     <li class="breadcrumb-item active" aria-current="page">Характеристики</li>
   </ol>
 </nav>
@@ -167,7 +168,7 @@ border : 2px solid lightgrey;
   </div>
   <div class="row"> 
 
-<div class="row"><div class="col-10  rounded-pill p-2" id="dob" style="color: white; background-color: orange; font-weight: 700; text-align: center" onclick="toast()">Добавить в корзину</div><div class="col-2" ><i class="fa fa-heart mt-2"onclick="liked()" aria-hidden="true" id="fi" style="font-size: 200%; color: red"></i></div></div>
+<div class="row"><div class="col-10  rounded-pill p-2" id="dob" style="color: white; background-color: orange; font-weight: 700; text-align: center" onclick="toast()">Добавить в корзину</div><div class="col-2" ><i class="fa fa-heart-o mt-2"onclick="liked()" aria-hidden="true" id="fi" style="font-size: 200%; color: red"></i></div></div>
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index:11">
     <div id="liveToast" class="toast " role="alert" aria-live="assertive" aria-atomic="true" style="color:black">
       <div class="toast-header">
@@ -183,15 +184,15 @@ border : 2px solid lightgrey;
 <div class="row">
 	<div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 25%; height: 70%;text-align:center; margin-right: 10px">
   <p>В магазинах: <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:none">
-  <a href="#" style="color: orange">завтра</a>
+  <a href="#" style="color: #006400">завтра</a>
 </button></p></div>
 <div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 30%; height: 70%;text-align:center;margin-right: 10px ">
   <p>Пункты выдачи:<button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal1" style="border:none">
-  <a href="#" style="color: orange">доступны</a>
+  <a href="#" style="color: #006400">доступны</a>
 </button></p></div>
 <div class="col-4 mt-2" style="background-color:#f6f6f6; border-radius: 10px;width: 30%; height: 70%;text-align:center; ">
   <p>Доставим на дом: <button type="button" class="btn btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border:none">
-  <a href="#" style="color: orange">послезавтра</a>
+  <a href="#" style="color: #006400">послезавтра</a>
 </button></p></div>
 
 <!-- Modal -->
@@ -362,7 +363,7 @@ Panasonic Lumix DMC-GX80 оборудован матрицей на 16.84 Мпи
 <div class="col-3 mt-3"><p style="font-weight: 500">Оставайтесь на связи</p>
 <p>8-800-77-07-999 (c 07:00 до 02:00)</p>
 <p><a href="#">Адреса магазинов в г. Томск</a></p>
-<div class="row"><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-vk" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-youtube-play" aria-hidden="true"></i></div><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-instagram" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:black; text-align: center" ><i class="fa fa-telegram" aria-hidden="true"></i></div></div></div></div>
+<div class="row"><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-vk" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-youtube-play" aria-hidden="true"></i></div><div class="col-2  ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:white; text-align: center" ><i class="fa fa-instagram" aria-hidden="true"></i></div><div class="col-2 ms-1 p-1 border-solid rounded-pill" style="background-color: orange;color:black; text-align: center" ><i class="fa fa-telegram" aria-hidden="true" style="color:white"></i></div></div></div></div>
 </div>
 </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
