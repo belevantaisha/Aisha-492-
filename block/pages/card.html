@@ -54,9 +54,11 @@ border : 2px solid lightgrey;
   </style>
   <script type="text/javascript">
     var imgs=new Array('../img/c2.jpg','../img/c3.jpg','../img/c4.jpg','../img/c4.jpg','../img/c5.jpg')
-    function chang (p){
-    document.getElementById('mainimg').src = imgs[p]}
-     function liked () {
+ function chang (p){
+    document.getElementById('mainimg').src = imgs[p]
+}
+     
+ function liked () {
    document.getElementById('fi').classList.toggle('fa-heart-o')   	
   document.getElementById('fi').classList.toggle('fa-heart')
     document.getElementById('lh').classList.toggle('visually-hidden')
@@ -66,10 +68,7 @@ border : 2px solid lightgrey;
   setTimeout("document.getElementById('liveToast').classList.toggle('show')",3000)
    document.getElementById('hl').classList.toggle('visually-hidden')
 }
-// elems = ['белый', 'черный','красный','синий','серый']
-// function smena(t){
-//   document.getElementById('text').textContent = 'Цвет - ' + elems[t]
-// }
+
   </script>
 
 </head>
@@ -164,7 +163,7 @@ border : 2px solid lightgrey;
   </div>
   <div class="row">
       <div style="display:inline-block; width: 40%; font-size: 200% ">76 499 ₽</div>
-    <p><div class="mt-0" style="color:grey;width: 100%">от 5 060 ₽/мес.</div></p><!-- <div class="mt-3" style="display:inline-block; width: 8%;background-color: red; height: 20%;color: white; font-weight: 700; border-radius: 300px 50px 50px 350px ">-36%</div> -->
+    <p><div class="mt-0" style="color:grey;width: 100%">от 5 060 ₽/мес.</div></p>
   </div>
   <div class="row"> 
 
@@ -273,10 +272,6 @@ border : 2px solid lightgrey;
     </div>
   </div>
 
-<!-- </div></p> ДОДЕЛАТЬ КРАСИВО
-  <div class="row">
-  	<div class="col-6 mt-2">Аксессуары</div>
-  </div> -->
 </div>
 </div></div>
 <div class="row" style="background-color: #f6f6f6">
